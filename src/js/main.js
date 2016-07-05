@@ -1,4 +1,6 @@
 import {it, expect} from "./test_lib";
+// Uncomment the line below for Hard Mode
+// Only do this *AFTER* the Normal Mode is finished!
 // import {coffee, human} from "./bonus";
 
 // Constructors
