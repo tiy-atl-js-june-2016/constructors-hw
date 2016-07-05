@@ -3,10 +3,32 @@ import {it, expect} from "./test_lib";
 // Constructors
 // Only add code to *THIS* section!
 
-///
-///
-///
-///
+function Coffee (full, empty){
+
+  this.full = true;
+  this.empty = true;
+
+};
+
+function Human (options){
+
+  var options = options || {};
+
+  this.alertness = options.alertness || 0.0;
+  this.hasCoffee = options.hasCoffee || false;
+  this.needsCoffee = (options.needsCoffee !== undefined) ? options.needsCoffee : true;
+
+  this.buy = function (coffee) {
+    coffee.full = true;
+    coffee.empty = false;
+  };
+
+  this.drink = function (coffee) {
+    coffee.full = false;
+    coffee.empty = true;
+    this.alertness = 0.35;
+  }
+};
 
 // Do not ADD or MODIFY code below this line :D
 
@@ -51,3 +73,5 @@ it("can drink all the coffee", function () {
   expect(tsmf.empty).toBe(true);
   expect(rodney.alertness > 0.9).toBe(true);
 });
+
+export{coffee, human};
