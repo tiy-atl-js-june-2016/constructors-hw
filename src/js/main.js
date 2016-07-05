@@ -1,15 +1,10 @@
 import {it, expect} from "./test_lib";
-// Uncomment the line below for Hard Mode
-// Only do this *AFTER* the Normal Mode is finished!
+import {Dog} from "./constructors/dog";
+import {Person} from "./constructors/person";
+// Uncomment the line below for Hard Mode and define
+// Human and Coffee objects to complete the Hard mode.
+// Only do this *after* Normal Mode is finished!
 // import {coffee, human} from "./bonus";
-
-// Constructors
-// Only add code to *THIS* section!
-
-///
-///
-///
-///
 
 // Do not ADD or MODIFY code below this line :)
 // Dogs
