@@ -3,7 +3,7 @@ function Dog (options) {
 
   this.status = options.status || "normal";
   this.color = options.color || "black";
-  this.hungry = (options.hungry !== undefined) ? options.hungry : true;
+  this.hungry = (options.hungry === undefined) ? true : options.hungry;
 };
 
 export {Dog};

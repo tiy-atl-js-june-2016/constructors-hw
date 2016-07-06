@@ -5,11 +5,10 @@ import {it, expect} from "./test_lib";
 
 function Coffee (options){
 
-  var options = options || {};
+  options = options || {};
 
-  this.full = (options.full !== undefined) ? options.full : true;
-  // this.empty = true;
-
+  this.full = (options.full === undefined) ? true : options.full;
+  this.empty = (options.empty === undefined) ? true : options.empty;
 };
 
 function Human (options){
@@ -26,8 +25,9 @@ function Human (options){
   };
 
   this.drink = function (coffee) {
-    coffee.full = false;
-    coffee.empty = true;
+    coffee = this;
+    coffee.full = coffee.full || false;
+    coffee.empty = coffee.empty || false;
     this.alertness = 0.35;
   }
 };
@@ -76,4 +76,4 @@ it("can drink all the coffee", function () {
   expect(rodney.alertness > 0.9).toBe(true);
 });
 
-export{coffee, human};
+export{Coffee, Human};
