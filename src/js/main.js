@@ -1,6 +1,7 @@
 import {it, expect} from "./test_lib";
 import {Dog} from "./constructors/dog";
-import {Human as Person} from "./constructors/person";
+import {Person} from "./constructors/person";
+
 // Uncomment the line below for Hard Mode and define
 // Human and Coffee objects to complete the Hard mode.
 // Only do this *after* Normal Mode is finished!
@@ -44,7 +45,6 @@ it("should make Moonshine no longer hungry when you feed him", function() {
   julia.feed(moonshine);
   expect(moonshine.hungry).toBe(false);
 });
-
 
 it("should not affect Atticus and Moonshine's owner properties when setting Mason as Sadie's owner ", function() {
   sadie.owner = mason;

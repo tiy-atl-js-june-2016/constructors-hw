@@ -1,5 +1,4 @@
 function Dog (options) {
-
   var options = options || {};
 
   this.status = options.status || "normal";

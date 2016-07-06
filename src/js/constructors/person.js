@@ -1,14 +1,13 @@
-function Human (options) {
-
-  var options = options || {};
-
-  this.pet = function (dog) {
-  dog.status = "happy";
- };
-  this.feed = function (dog) {
-  dog.hungry = false;
-};
+function Person (options) {
+  options = options || {};
   this.cool = options.cool || false;
+  this.pet = function (dog) {
+    dog.cuteness = "100 emoji";
+    dog.status = "happy";
+  };
+  this.feed = function (animal) {
+    animal.hungry = false;
+  };
 };
 
-export {Human};
+export {Person};
