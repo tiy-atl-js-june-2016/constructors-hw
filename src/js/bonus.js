@@ -3,10 +3,12 @@ import {it, expect} from "./test_lib";
 // Constructors
 // Only add code to *THIS* section!
 
-function Coffee (full, empty){
+function Coffee (options){
 
-  this.full = true;
-  this.empty = true;
+  var options = options || {};
+
+  this.full = (options.full !== undefined) ? options.full : true;
+  // this.empty = true;
 
 };
 

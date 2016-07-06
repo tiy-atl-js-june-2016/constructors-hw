@@ -4,8 +4,6 @@ import {Human as Person} from "./constructors/person";
 // Uncomment the line below for Hard Mode and define
 // Human and Coffee objects to complete the Hard mode.
 // Only do this *after* Normal Mode is finished!
-import {Coffee, Human} from "./bonus";
-
 // Do not ADD or MODIFY code below this line :)
 // Dogs
 let sadie = new Dog({
@@ -20,9 +18,9 @@ let moonshine = new Dog({
 let atticus = new Dog();
 
 // Humans
-let mason = new Human();
+let mason = new Person();
 
-let julia = new Human({
+let julia = new Person({
   cool: true
 });
 
